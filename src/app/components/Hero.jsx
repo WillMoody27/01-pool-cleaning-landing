@@ -5,8 +5,8 @@ export default function Hero() {
     <section className="relative bg-gray-50 py-20">
       <div className="md:mt-[100px]"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="text-[#DC2626] font-medium mb-4">
               WE ARE POOL EXPERTS
             </div>
@@ -35,7 +35,7 @@ export default function Hero() {
                 <div className="text-sm text-gray-600">Customer Rating</div>
               </div>
             </div>
-            <button className="bg-[#DC2626] text-white px-8 py-3 rounded hover:bg-[#B91C1C] transition-colors">
+            <button className="bg-[#DC2626] text-white px-8 py-3 rounded hover:bg-[#B91C1C] transition-colors mx-auto md:mx-0">
               Try Our Service →
             </button>
           </div>

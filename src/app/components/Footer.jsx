@@ -98,14 +98,16 @@ export default function Footer() {
   return (
     <footer className="bg-[#1E3A8A] text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-2xl font-bold mb-6">CrystalClear Pools</h3>
-            <p className="text-gray-300 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center items-center">
+          <div className="flex flex-col items-center text-center">
+            <h3 className="text-2xl font-bold mb-6 text-center">
+              CrystalClear Pools
+            </h3>
+            <p className="text-gray-300 mb-6 text-center">
               Your trusted partner for professional pool maintenance and
               cleaning services across Texas. Serving the community since 2010.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -192,16 +194,24 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center items-center">
             <div>
               <h4 className="text-lg font-semibold mb-4">
                 Contact Information
               </h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>123 Main Street, San Antonio, TX 78205</li>
-                <li>Phone: (555) 123-4567</li>
-                <li>Email: info@crystalclearpools.com</li>
-                <li>Hours: Mon-Fri 8:00 AM - 6:00 PM</li>
+              <ul className="space-y-2 text-gray-300 text-center items-center w-full">
+                <li className="w-full flex justify-center">
+                  123 Main Street, San Antonio, TX 78205
+                </li>
+                <li className="w-full flex justify-center">
+                  Phone: (555) 123-4567
+                </li>
+                <li className="w-full flex justify-center">
+                  Email: info@crystalclearpools.com
+                </li>
+                <li className="w-full flex justify-center">
+                  Hours: Mon-Fri 8:00 AM - 6:00 PM
+                </li>
               </ul>
             </div>
             <div>
@@ -227,12 +237,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col items-center gap-6 text-center">
             <p className="text-gray-300">
               &copy; {new Date().getFullYear()} CrystalClear Pools. All rights
               reserved.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -244,7 +254,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <div className="flex gap-6 text-sm">
+            <div className="flex gap-6 text-sm justify-center">
               <a
                 href="#"
                 className="text-gray-300 hover:text-white transition-colors"
@@ -268,12 +278,12 @@ export default function Footer() {
           <div className="mt-4 text-sm text-center text-gray-300">
             Website designed by{" "}
             <a
-              href="https://1116webdesign.com"
+              href="https://www.williamhmoody.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#DC2626] hover:text-white transition-colors"
             >
-              11|16 Web Design
+              William Hellems-Moody
             </a>
           </div>
         </div>
