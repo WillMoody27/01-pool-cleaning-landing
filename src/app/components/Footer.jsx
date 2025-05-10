@@ -99,15 +99,15 @@ export default function Footer() {
     <footer className="bg-[#1E3A8A] text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center items-center">
-          <div className="flex flex-col items-center text-center">
-            <h3 className="text-2xl font-bold mb-6 text-center">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <h3 className="text-2xl font-bold mb-6 text-center md:text-left">
               CrystalClear Pools
             </h3>
-            <p className="text-gray-300 mb-6 text-center">
+            <p className="text-gray-300 mb-6 text-center md:text-left">
               Your trusted partner for professional pool maintenance and
               cleaning services across Texas. Serving the community since 2010.
             </p>
-            <div className="flex space-x-4 justify-center">
+            <div className="flex space-x-4 justify-center md:justify-start">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
